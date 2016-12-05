@@ -1,0 +1,15 @@
+<?php
+	if (!empty($_SESSION['user_id'])) {
+		header('location:account');
+	} else {
+		?>
+			<div class="login-box">
+				<?php require($showView->inc('login','component')) ?>
+				<div class="login-links">
+					<a href="sign">Cadastrar</a>
+					<a href="#">Recuperar senha</a>
+				</div>
+			</div>
+		<?php
+	}
+?>

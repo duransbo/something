@@ -1,0 +1,14 @@
+<?php
+	if (empty($_SESSION['user_id'])) {
+		header('location:login');
+	} else {
+		?>
+			<div class="account-box">
+				<div class="account-logout"></div>
+				<div class="account-links">
+					<a href="login">Sair</a>
+				</div>
+			</div>
+		<?php
+	}
+?>

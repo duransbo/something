@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<base href="<?php echo URL ?>">
+		<?php require(PAGE.$page.'/page_'.$page.'_head.html') ?>
+		<link rel="shortcut icon" href="<?php echo IMAGE ?>orchard.ico" type="image/x-icon">
+		<?php
+			$showView->addCss('reset', 'asset');
+			$showView->addCss('clear', 'template');
+			$showView->addCss($page, 'page');
+			$showView->css();
+		?>
+	</head>
+
+	<body>
+		<?php require($showView->inc($page,'page')) ?>
+		<?php $showView->addJs('script', 'asset') ?>
+		<?php	$showView->js() ?>
+	</body>
+
+</html>

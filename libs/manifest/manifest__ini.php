@@ -1,0 +1,2 @@
+<?php require_once(str_replace("\\", "/", dirname(dirname(__FILE__))).'/settings/config__dll.php') ?>
+<html manifest="<?php echo URL ?>system/manifest/manifest__dll.php?screen=<?php echo $_GET['screen'] ?>&zone=<?php echo $_GET['zone'] ?>&lang=<?php echo $_GET['lang'] ?>&page=<?php echo $_GET['page'] ?>"></html>

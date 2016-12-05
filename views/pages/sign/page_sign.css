@@ -1,0 +1,59 @@
+body {
+	height: 100vh;
+	align-items: center;
+}
+
+
+
+.sign-box {
+	flex-flow: column;
+}
+.sign-links {
+	width: 50%;
+	margin: 15px auto;
+	justify-content: space-around;
+}
+.sign-links a {
+	color: #111;
+	transition: color .2s;
+}
+.sign-links a:hover {
+	color: #2090cc;
+}
+.sign-form {
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 0px 0px 2px #111;
+	padding: 30px;
+	background-color: #efefef;
+}
+.sign-form legend {
+	width: 100%;
+	margin-bottom: 10px;
+	border-width: 0px 0px 2px 0px;
+	padding-bottom: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.sign-form input {
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	padding: 10px;
+}
+.sign-form input[type=submit] {
+	background-color: #2090cc;
+	color: #fff;
+}
+.sign-validate {
+	padding: 10px;
+	background-color: #2090cc;
+	color: #fff;
+	justify-content: center;
+}
+.sign-validate.error {
+	background-color: #f00;
+}
+.sign-validate.sucess {
+	background-color: #0d5;
+}
